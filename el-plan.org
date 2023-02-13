@@ -1,0 +1,18 @@
+* F1-Tool
+Takes in data about the current F1 season and provides an easy way to visualize
+data and will give you reminders about the upcoming races
+
+* Race Reminder
+Take in seasonal data, sync with google calendars?? Cron job to send notification
+daily or countdown to upcoming race
+
+* Stat vis
+Simple gui application
+
+
+* Project
+- Maybe prototype in python to get general structure and idea?
+
+- Try developing with Rust
+- Rust Simple GUI, notify-rust, job_scheduler
+- Host simple app on AWS?
