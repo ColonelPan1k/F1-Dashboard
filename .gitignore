@@ -1,2 +1,4 @@
 prototype/__pycache__/*
 prototype/venv/*
+
+prototype/docker/mysql/init/f1db.sql
