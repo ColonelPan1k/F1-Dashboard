@@ -25,10 +25,14 @@ export function Countdown(props){
 
 						const s = Math.floor((diff % (1000 * 60)) / 1000);
 						setSeconds(s);
-				});
+				}, 1000);
 
 				return () => clearInterval(interval)
 		});
 
-		return ( <div><h1>{days}d {hours}h {minutes}m {seconds}s </h1></div>)
+		return (
+				<div className="countdown-timer">
+						{days}d {hours}h {minutes}m {seconds}s
+   			</div>
+					 );
 }
