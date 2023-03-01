@@ -19,10 +19,12 @@ app.add_middleware(
 
 @app.get("/upcoming")
 async def upcoming_event():
-    return {
-        "event": upcoming.process_upcoming_event_data(),
-        "next_event": upcoming.calculate_upcoming_sub_event(),
-    }
+    return upcoming.calculate_upcoming_sub_event()
+
+
+@app.get("/upcoming-table")
+async def get_upcoming_events_as_table():
+    return upcoming.get_upcoming_events_as_table()
 
 
 @app.get("/standings/{year}/{race_name}")
